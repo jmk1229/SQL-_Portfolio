@@ -1,5 +1,5 @@
 # SQL-_Portfolio
-A collection of my sample SQL files. MUSIC File
+A collection of my sample SQL script. Written from a MUSIC File database in SQL Esseential Training course
 
 Ex 1. 
 /* Pull Names and Emails 
