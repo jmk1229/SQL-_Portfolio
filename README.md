@@ -15,9 +15,12 @@ SELECT
 FROM
  Customer
 
+
 EX 2 
 /*This shows 3 columns: "Customer First Name," "Customer Last Name," and "EMAIL," containing the corresponding values from the "Customer" table. The use of aliases makes the output more readable and provides more meaningful column names.
 */
+
+
 SELECT
  FirstName AS[Customer First Name],
  LastName AS[Customer Last Name],
@@ -26,9 +29,12 @@ FROM
  Customer
 */
 
+
 Ex 3. 
 /* This is a list of records from the "Customer" table, sorted first by "Customer First Name" in ascending order and then within each group by "Customer Last Name" in descending order.
 */
+
+
 SELECT
  FirstName AS[Customer First Name],
  LastName AS[Customer Last Name],
@@ -44,6 +50,7 @@ FROM
 ex 4. 
 /* list of records from the "Invoice" table, including columns for invoice date, billing address, billing city, and total, but only for invoices where the billing city is 'Brussels'. 
 */
+
 SELECT
 InvoiceDate,
 BillingAddress,
@@ -55,6 +62,8 @@ WHERE
 BillingCity ='Brussels'
  ORDER BY
  InvoiceDate
+
+
 
  EX 5. - 
  /*list of records from the "Invoice" table, including columns for invoice date, billing address, billing city, and total, but only for invoices where the invoice date is after '2010-05-22' and the total is less than 3.00. 
@@ -71,6 +80,7 @@ WHERE
  ORDER BY
  InvoiceDate
 
+
 Ex 6. 
 /* list of records from the "Customer" table for customers in the USA. It includes columns for first name, last name, address, a concatenated mailing address, and the length of the postal code for each customer.
 */ 
@@ -85,6 +95,8 @@ FROM
 Customer
 WHERE
 Country = 'USA'
+
+
 
 eX 7. 
 /*list of records from the "Employee" table with columns for last name, first name, birthdate, birthdate without the time component, and the age of each employee in days.
@@ -111,6 +123,8 @@ SELECT
     COUNT(*) AS [Sales COUNT]
 FROM
     Invoice
+
+
 
 Ex 8. 
 /*
