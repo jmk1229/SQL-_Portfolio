@@ -1,8 +1,11 @@
 # SQL-_Portfolio
-A collection of my sample SQL script. Written from a MUSIC File database in SQL Esseential Training course
+A collection of my sample SQL script. These were scripts written for an online Training class in SQL. Each script has a descriptive note. 
+
+
+Written from a MUSIC File database in SQL Esseential Training course
 
 Ex 1. 
-/* Pull Names and Emails 
+/* A list of records from the Customer table, with each record containing the values for FirstName, LastName, and Email for a particular customer.
 */
 
 SELECT
@@ -13,7 +16,7 @@ FROM
  Customer
 
 EX 2 
-/*Specify column names
+/*This shows 3 columns: "Customer First Name," "Customer Last Name," and "EMAIL," containing the corresponding values from the "Customer" table. The use of aliases makes the output more readable and provides more meaningful column names.
 */
 SELECT
  FirstName AS[Customer First Name],
@@ -24,7 +27,7 @@ FROM
 */
 
 Ex 3. 
-/* ASC & DESC 
+/* This is a list of records from the "Customer" table, sorted first by "Customer First Name" in ascending order and then within each group by "Customer Last Name" in descending order.
 */
 SELECT
  FirstName AS[Customer First Name],
@@ -39,7 +42,7 @@ FROM
 
 
 ex 4. 
-/* Points to brussels as billing city 
+/* list of records from the "Invoice" table, including columns for invoice date, billing address, billing city, and total, but only for invoices where the billing city is 'Brussels'. 
 */
 SELECT
 InvoiceDate,
@@ -54,7 +57,7 @@ BillingCity ='Brussels'
  InvoiceDate
 
  EX 5. - 
- /*Date and total $ less then 3.00
+ /*list of records from the "Invoice" table, including columns for invoice date, billing address, billing city, and total, but only for invoices where the invoice date is after '2010-05-22' and the total is less than 3.00. 
 */
 SELECT
 InvoiceDate,
@@ -69,8 +72,8 @@ WHERE
  InvoiceDate
 
 Ex 6. 
-/*Create a Mailing List of US Customers
-*/ String Function - using Length to show zip codes
+/* list of records from the "Customer" table for customers in the USA. It includes columns for first name, last name, address, a concatenated mailing address, and the length of the postal code for each customer.
+*/ 
 
 SELECT
 FirstName,
@@ -84,7 +87,7 @@ WHERE
 Country = 'USA'
 
 eX 7. 
-/*Calculate the ages of all employees
+/*list of records from the "Employee" table with columns for last name, first name, birthdate, birthdate without the time component, and the age of each employee in days.
 */
 
 SELECT
@@ -111,7 +114,7 @@ FROM
 
 Ex 8. 
 /*
-Nesting function using Round
+single row with aggregate information about the "Total" column in the "Invoice" table, including total sales, average sales, maximum sales, minimum sales, and the count of sales.
 */
 
 SELECT
